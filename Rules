@@ -428,7 +428,6 @@ rules:
   - DOMAIN-KEYWORD,announce,DIRECT
   - DOMAIN-KEYWORD,torrent,DIRECT
 #CUSTOMIZED
-  - DOMAIN-SUFFIX,adfscrmp.helichina.com,DIRECT
   - DOMAIN-SUFFIX,google.com,🔍Google
   - DOMAIN-SUFFIX,cocomanga.com,🔍Google
   - DOMAIN-KEYWORD,youtube,🔍Google
