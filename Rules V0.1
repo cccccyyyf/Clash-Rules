@@ -229,6 +229,7 @@ proxy-groups:
       - 🇭🇰 HK | 06
       - 🇭🇰 HK | 07
       - 🇭🇰 HK | 08
+    hidden: true
 
   - name: 🇨🇳TW
     type: url-test
@@ -243,6 +244,7 @@ proxy-groups:
       - 🇨🇳 TW | 06
       - 🇨🇳 TW | 07
       - 🇨🇳 TW | 08
+    hidden: true
 
   - name: 🇯🇵JP
     type: url-test
@@ -257,6 +259,7 @@ proxy-groups:
       - 🇯🇵 JP | 06
       - 🇯🇵 JP | 07
       - 🇯🇵 JP | 08
+    hidden: true
 
   - name: 🇸🇬SG
     type: url-test
@@ -271,6 +274,7 @@ proxy-groups:
       - 🇸🇬 SG | 06
       - 🇸🇬 SG | 07
       - 🇸🇬 SG | 08
+    hidden: true
 
   - name: 🇺🇸US
     type: url-test
@@ -285,6 +289,7 @@ proxy-groups:
       - 🇺🇸 US | 06
       - 🇺🇸 US | 07
       - 🇺🇸 US | 08
+    hidden: true
 
 # 功能分流
 
@@ -950,7 +955,6 @@ rules:
   - DOMAIN-SUFFIX,office365.com,Ⓜ️Microsoft
   - DOMAIN-SUFFIX,officeppe.net,Ⓜ️Microsoft
   - DOMAIN-SUFFIX,omniroot.com,Ⓜ️Microsoft
-  - DOMAIN-SUFFIX,onedrive.com,Ⓜ️Microsoft
   - DOMAIN-SUFFIX,onenote.com,Ⓜ️Microsoft
   - DOMAIN-SUFFIX,onenote.net,Ⓜ️Microsoft
   - DOMAIN-SUFFIX,onestore.ms,Ⓜ️Microsoft
@@ -983,7 +987,28 @@ rules:
   - DOMAIN-SUFFIX,yammer.com,Ⓜ️Microsoft
   - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️Microsoft
   - DOMAIN-SUFFIX,ipv6.microsoft.com,Ⓜ️Microsoft
+  - DOMAIN-KEYWORD,github,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,github.com,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,github.io,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,githubapp.com,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,githubassets.com,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,githubusercontent.com,Ⓜ️Microsoft
+  - PROCESS-NAME,OneDrive,Ⓜ️Microsoft
+  - PROCESS-NAME,OneDriveUpdater,Ⓜ️Microsoft
+  - DOMAIN-KEYWORD,1drv,Ⓜ️Microsoft
+  - DOMAIN-KEYWORD,onedrive,Ⓜ️Microsoft
+  - DOMAIN-KEYWORD,skydrive,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,livefilestore.com,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,oneclient.sfx.ms,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,onedrive.com,Ⓜ️Microsoft
   - DOMAIN-SUFFIX,onedrive.live.com,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,photos.live.com,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,sharepoint.com,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,sharepointonline.com,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,skydrive.wns.windows.com,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,storage.live.com,Ⓜ️Microsoft
+  - DOMAIN-SUFFIX,storage.msn.com,Ⓜ️Microsoft
 
 #🎮Game
   - DOMAIN,steammobile.akamaized.net,🎮Game
@@ -1310,9 +1335,6 @@ rules:
   - DOMAIN-SUFFIX,gate.io,🪜Proxies
   - DOMAIN-SUFFIX,getlantern.org,🪜Proxies
   - DOMAIN-SUFFIX,getsync.com,🪜Proxies
-  - DOMAIN-SUFFIX,github.com,🪜Proxies
-  - DOMAIN-SUFFIX,github.io,🪜Proxies
-  - DOMAIN-SUFFIX,githubusercontent.com,🪜Proxies
   - DOMAIN-SUFFIX,globalvoices.org,🪜Proxies
   - DOMAIN-SUFFIX,goo.ne.jp,🪜Proxies
   - DOMAIN-SUFFIX,goodreads.com,🪜Proxies
