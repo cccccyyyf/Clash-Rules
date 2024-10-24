@@ -1,0 +1,510 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 0.0.0.0:9090
+clash-for-android:
+  append-system-dns: false
+profile:
+  tracing: true
+experimental:
+  sniff-tls-sni: true
+dns:
+  enable: true
+  listen: 127.0.0.1:8853
+  default-nameserver:
+    - 223.5.5.5
+    - 8.8.4.4
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - +.msftconnecttest.com
+    - +.msftncsi.com
+    - msftconnecttest.com
+    - msftncsi.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - xnotify.xboxlive.com
+    - +.ipv6.microsoft.com
+    - +.battlenet.com.cn
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
+    - heartbeat.belkin.com
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    - "*.router.asus.com"
+    - mesu.apple.com
+    - swscan.apple.com
+    - swquery.apple.com
+    - swdownload.apple.com
+    - swcdn.apple.com
+    - swdist.apple.com
+    - lens.l.google.com
+    - stun.l.google.com
+    - "*.square-enix.com"
+    - "*.finalfantasyxiv.com"
+    - "*.ffxiv.com"
+    - "*.ff14.sdo.com"
+    - ff.dorado.sdo.com
+    - "*.mcdn.bilivideo.cn"
+    - +.media.dssott.com
+    - +.pvp.net
+  nameserver:
+    - 114.114.114.114
+    - tls://223.5.5.5:853
+    - tls://223.6.6.6:853
+    - tls://1.12.12.12
+    - tls://120.53.53.53
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - tls://8.8.4.4:853
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.facebook.com
+      - +.twitter.com
+      - +.google.com
+      - +.googleapis.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.xn--ngstr-lra8j.com
+      - +.googlevideo.com
+      - +.gvt1.com
+      - +.gmail.com
+      - +.youtube.com
+      - +.youtu.be
+      - +.gvt0.com
+      - +.gvt2.com
+      - +.gvt3.com
+      - +.gstatic.com
+      - +.265.com
+      - +.2mdn.net
+      - +.app-measurement.com
+      - +.c.admob.com
+      - +.clickserve.dartsearch.net
+      - +.crl.pki.goog
+      - +.doubleclick.net
+      - +.firebase-settings.crashlytics.com
+      - +.google-analytics.com
+      - +.googleadservices.com
+      - +.googleanalytics.com
+      - +.googleoptimize.com
+      - +.googlesyndication.com
+      - +.googletagmanager.com
+      - +.googletagservices.com
+proxies:
+
+
+proxy-groups:
+
+# 所有节点
+
+  - name: 🪜Proxies
+    type: select
+    Include-all: true
+    proxies:
+      - 🇭🇰HK
+      - 🇨🇳TW
+      - 🇯🇵JP
+      - 🇸🇬SG
+      - 🇺🇸US
+      - 🇰🇷 Korea | 01
+      - 🇹🇭 Thailand | 01
+      - 🇻🇳 Vietnam | 01
+      - 🇲🇾 Malaysia | 01
+      - 🇮🇳 India | 01
+      - 🇨🇦 Canada | 01
+      - 🇬🇧 United Kingdom | 01
+      - 🇬🇧 United Kingdom | 02
+      - 🇩🇪 Germany | 01
+      - 🇩🇪 Germany | 02
+      - 🇳🇱 Netherlands | 01
+      - 🇳🇱 Netherlands | 02
+      - 🇮🇹 Italy | 01
+      - 🇪🇸 Spain | 01
+      - 🇦🇺 Australia | 01
+      - 🇹🇷 Turkey | 01
+      - 🇮🇱 Israel | 01
+      - 🇦🇷 Argentina | 01
+      - 🇧🇷 Brazil | 01
+      - 🇨🇱 Chile | 01
+      - 🇿🇦 Johannesburg | 01 
+
+# 地区分流
+
+  - name: 🪜Auto
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 🇭🇰HK
+      - 🇨🇳TW
+      - 🇯🇵JP
+      - 🇸🇬SG
+      - 🇺🇸US 
+
+  - name: 🇭🇰HK
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 🇭🇰 HK | 01
+      - 🇭🇰 HK | 02
+      - 🇭🇰 HK | 03
+      - 🇭🇰 HK | 04
+      - 🇭🇰 HK | 05
+      - 🇭🇰 HK | 06
+      - 🇭🇰 HK | 07
+      - 🇭🇰 HK | 08
+    hidden: true
+
+  - name: 🇨🇳TW
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 🇨🇳 TW | 01
+      - 🇨🇳 TW | 02
+      - 🇨🇳 TW | 03
+      - 🇨🇳 TW | 04
+      - 🇨🇳 TW | 05
+      - 🇨🇳 TW | 06
+      - 🇨🇳 TW | 07
+      - 🇨🇳 TW | 08
+    hidden: true
+
+  - name: 🇯🇵JP
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 🇯🇵 JP | 01
+      - 🇯🇵 JP | 02
+      - 🇯🇵 JP | 03
+      - 🇯🇵 JP | 04
+      - 🇯🇵 JP | 05
+      - 🇯🇵 JP | 06
+      - 🇯🇵 JP | 07
+      - 🇯🇵 JP | 08
+    hidden: true
+
+  - name: 🇸🇬SG
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 🇸🇬 SG | 01
+      - 🇸🇬 SG | 02
+      - 🇸🇬 SG | 03
+      - 🇸🇬 SG | 04
+      - 🇸🇬 SG | 05
+      - 🇸🇬 SG | 06
+      - 🇸🇬 SG | 07
+      - 🇸🇬 SG | 08
+    hidden: true
+
+  - name: 🇺🇸US
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 🇺🇸 US | 01
+      - 🇺🇸 US | 02
+      - 🇺🇸 US | 03
+      - 🇺🇸 US | 04
+      - 🇺🇸 US | 05
+      - 🇺🇸 US | 06
+      - 🇺🇸 US | 07
+      - 🇺🇸 US | 08
+    hidden: true
+
+# 功能分流
+
+  - name: 🍎Apple
+    type: select
+    proxies:
+      - DIRECT 
+      - 🪜Proxies
+      - 🇭🇰HK
+      - 🇨🇳TW
+      - 🇯🇵JP
+      - 🇸🇬SG
+      - 🇺🇸US
+
+  - name: Ⓜ️Microsoft
+    type: select
+    proxies:
+      - DIRECT 
+      - 🪜Auto
+      - 🇭🇰HK
+      - 🇨🇳TW
+      - 🇯🇵JP
+      - 🇸🇬SG
+      - 🇺🇸US
+
+  - name: 🔍Google
+    type: select
+    proxies:
+      - 🪜Auto
+      - 🇭🇰HK
+      - 🇨🇳TW
+      - 🇯🇵JP
+      - 🇸🇬SG
+      - 🇺🇸US
+
+  - name: 💬Social
+    type: select
+    proxies:
+      - 🪜Auto
+      - 🇭🇰HK
+      - 🇨🇳TW
+      - 🇯🇵JP
+      - 🇸🇬SG
+      - 🇺🇸US
+
+  - name: 🎬Bilibili
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰HK
+      - 🇨🇳TW
+
+  - name: 🎬Disney
+    type: select
+    proxies:
+      - 🇭🇰HK
+      - 🇨🇳TW
+      - 🇯🇵JP
+      - 🇸🇬SG
+      - 🇺🇸US
+      - DIRECT
+
+  - name: 🎬Netflix
+    type: select
+    proxies:
+      - 🇭🇰HK
+      - 🇨🇳TW
+      - 🇯🇵JP
+      - 🇸🇬SG
+      - 🇺🇸US
+      - 🇨🇦 Canada | 01
+      - 🇬🇧 United Kingdom | 01
+      - 🇬🇧 United Kingdom | 02
+      - 🇩🇪 Germany | 01
+      - 🇩🇪 Germany | 02
+      - 🇳🇱 Netherlands | 01
+      - 🇳🇱 Netherlands | 02
+      - 🇹🇷 Turkey | 01
+      - DIRECT
+
+  - name: 🤖AI
+    type: select
+    proxies:
+      - 🇭🇰HK
+      - 🇨🇳TW
+      - 🇯🇵JP
+      - 🇸🇬SG
+      - 🇺🇸US
+      - DIRECT
+
+  - name: 🎮Game
+    type: select
+    proxies:
+      - 🇭🇰HK
+      - 🇨🇳TW
+      - 🇯🇵JP
+      - 🇸🇬SG
+      - 🇺🇸US
+      - DIRECT
+
+  - name: 🐟漏网之鱼
+    type: select
+    proxies:
+      - 🪜Proxies
+      - 🪜Auto
+      - DIRECT
+
+
+rule-providers:
+
+#Customized
+  AI:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/cadf7ac6e72bd2e240ca4a6f48aa9614/raw"
+    path: ./providers/rules-ai.yaml
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/fa23890301e34151e675180a4c5cb5ad/raw"
+    path: ./providers/rules-apple.yaml
+    interval: 86400
+  Disney:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/9e15e2e7365cfc35904b7249d22ee12e/raw"
+    path: ./providers/rules-disney.yaml
+    interval: 86400 
+  CNvideo:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/ffad686aa0bb6e74c22e5b94d776b3bb/raw"
+    path: ./providers/rules-cnvideo.yaml
+    interval: 86400 
+  Game:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/e04b995bf16eb8b457940e2d39a55d4b/raw"
+    path: ./providers/rules-game.yaml
+    interval: 86400 
+  Google:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/6cfd2b0fb3da8d6577973b24729b15eb/raw"
+    path: ./providers/rules-google.yaml
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/8ad2638dcb8f017331952e57760e40ea/raw"
+    path: ./providers/rules-microsoft.yaml
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/5187034ff6d07a3ec9dfb8a0264efbad/raw"
+    path: ./providers/rules-netflix.yaml
+    interval: 86400
+  Social:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/a85bb6f87496cf9168e6fa388ed76077/raw"
+    path: ./providers/rules-social-media.yaml
+    interval: 86400
+  Others:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/3a0377402be50a35f235e311a385b17b/raw"
+    path: ./providers/rules-others.yaml
+    interval: 86400
+
+#DIRECT
+  CN:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/835d232640cffa47256b5cf4e695aeac/raw"
+    path: ./providers/rules-cn.yaml
+    interval: 86400
+  IPDIRECT:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/9170c3232af154f150bb5cadfdb5b82f/raw"
+    path: ./providers/rules-ipdirect.yaml
+    interval: 86400 
+  Lan:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/ba8e3a4787b38f1c071a23026db78e9a/raw"
+    path: ./providers/rules-lan.yaml
+    interval: 86400 
+
+#REJECT
+  Reject:
+    type: http
+    behavior: classical
+    url: "https://gist.githubusercontent.com/cccccyyyf/a7c9b0564cfb45538f9f4ced7dde3054/raw"
+    path: ./providers/rules-reject.yaml
+    interval: 86400 
+
+rules:
+  - RULE-SET,Reject,REJECT
+  - RULE-SET,AI,🤖AI
+  - RULE-SET,Apple,🍎Apple
+  - RULE-SET,Disney,🎬Disney
+  - RULE-SET,CNvideo,🎬Bilibili
+  - RULE-SET,Game,🎮Game
+  - RULE-SET,Google,🔍Google
+  - RULE-SET,Microsoft,Ⓜ️Microsoft
+  - RULE-SET,Netflix,🎬Netflix
+  - RULE-SET,Social,💬Social
+  - RULE-SET,Others,🪜Proxies
+  - RULE-SET,CN,DIRECT
+  - RULE-SET,Lan,DIRECT
+  - RULE-SET,IPDIRECT,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,🐟漏网之鱼
+
