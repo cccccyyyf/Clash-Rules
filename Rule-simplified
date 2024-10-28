@@ -489,8 +489,17 @@ rule-providers:
     path: ./providers/rules-reject.yaml
     interval: 86400 
 
+#Adobe Test Block
+  Adobereject:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ignaciocastro/a-dove-is-dumb/refs/heads/main/clash.yaml"
+    path: ./providers/rules-reject.yaml
+    interval: 86400 
+
 rules:
   - RULE-SET,Reject,REJECT
+  - RULE-SET,Adobereject,REJECT
   - RULE-SET,AI,🤖AI
   - RULE-SET,Apple,🍎Apple
   - RULE-SET,Disney,🎬Disney
